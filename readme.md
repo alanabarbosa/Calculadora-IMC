@@ -9,6 +9,7 @@ Application made with Javascript
 **Futuras Modificações**
 
  - Pesquisar ao pressionar o ENTER
+ - Responsividade
  
 Fique à vontade para colaborar com meu projeto
 
