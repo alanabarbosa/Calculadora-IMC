@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <div class="container">
+            <div class="title">
+                <h1>Calculadora IMC</h1>
+            </div>
+            <div class="calculator">
+                <div class="pyro">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                </div>
+                <div class="input direction">
+                    <label>Nome:</label>
+                    <input type="text" id='name'>
+                </div>
+                <div class="input direction">
+                    <label>Altura:</label>
+                    <input type="number" id='height'>
+                </div>
+                <div class="input direction">
+                    <label>Peso:</label>
+                    <input type="number" id='weight'>
+                </div>
+                <div class="input checkBoxMasc">
+                    <input type="radio" id="inputCheck" name="contact" value="masc">
+                    <label>Masculino:</label>
+                </div>
+                <div class="input checkBoxFemin">
+                    <input type="radio" id="inputCheck" name="contact" value="femin">
+                    <label>Feminino:</label>
+                </div>
+                <div class="rodape">
+                    <button id='calcular'>Calcular</button>
+                </div>
+            </div>
+            <div class="ilustration woman">
+                <img src="image/woman-fitness.png" alt="">
+            </div>
+            <div class="ilustration man">
+                <img src="image/man-fitness.png" alt="">
+            </div>
+            <section class="modal-container" data-modal="container">
+                <div class="modal">
+                    <button data-modal="fechar" class="fechar">X</button>
+                    <h1>TESTE</h1>
+                </div>
+            </section>
+            <section class="danger"></section>
+        </div>
+    </main>
+    <script src="js/imc.js"></script>
+</body>
+
+</html>
