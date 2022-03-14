@@ -1,10 +1,10 @@
-# Calculator IMC 🔍📌
+# Calculator IMC 🏋🏽
 
 Application made with Javascript
 
 # Imagens 📸
-<img src="img/image01.png">
-<img src="img/image02.png">
+<img src="images/image01.png">
+<img src="images/image02.png">
 
 **Futuras Modificações**
 
