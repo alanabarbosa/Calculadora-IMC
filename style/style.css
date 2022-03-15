@@ -47,12 +47,14 @@
     }
     
     .calculator {
+
         display: flex;
         flex-direction: column;
         width: 40%;
         height: 65%;
         padding-bottom: 50px;
     }
+
     
     .ilustration {
         width: 40%;
@@ -64,6 +66,7 @@
         align-items: center;
         margin-bottom: 10px
     }
+
     
     .input input {
         width: 80%;
@@ -74,16 +77,53 @@
         font: bold 1.5rem serif;
         text-align: center;
     }
-    
+
     .input label {
-        font: bold 1.5rem serif;
+        font: bold 1.2rem serif;
         font-family: 'Poppins', sans-serif;
         color: #F2F7FF
+        
+    }
+    #label-name, #label-height, #label-weight{
+        color: #2B2D33;
+        position: absolute;
+        top: 8px;
+        left: 65px;
+        transition: .5s;
+        background: transparent;
     }
     
+    @media (max-width: 800px){
+        #label-name, #label-height, #label-weight{
+            top: -15px;
+            left: 6vw;
+            background: linear-gradient(to bottom, transparent, white 60%);
+        }
+    }
+    
+    #name:focus ~ #label-name{
+        transform: translate(-5px,-25px) scale(.7);
+        background: linear-gradient(to bottom, transparent, white 60%);
+        color: red;
+    }
+    
+    #height:focus ~ #label-height{
+        transform: translate(-5px,-25px) scale(.7);
+        background: linear-gradient(to bottom, transparent, white 60%);
+        color: red;
+    }
+    
+    #weight:focus ~ #label-weight{
+        transform: translate(-5px,-25px) scale(.7);
+        background: linear-gradient(to bottom, transparent, white 60%);
+        color: red;
+    }
+
     .direction {
         display: flex;
         flex-direction: column;
+        position: relative;
+        margin-top: 20px;
     }
     
     .rodape {
@@ -109,17 +149,26 @@
     #inputCheck {
         width: 30px;
     }
+
+
     
     button {
         width: 80%;
         height: 40px;
-        font: bold 1.2rem serif;
+        font: bold .8rem serif;
         background: #09090A;
         color: #F2F7FF;
         outline: none;
         border-radius: 5px;
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
+        border: none;
+        transition: .7;
+        background-color: #2D2B33;
+    }
+
+    #calcular:hover{
+        background-color: #3B3B4A
     }
     
     .result {
